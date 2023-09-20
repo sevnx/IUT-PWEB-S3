@@ -154,8 +154,8 @@ h6 {
 .navbar a:focus {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 0 10px 40px;
+  justify-content: center;
+  padding: 10px 20px 10px 20px;
   font-size: 15px;
   font-weight: 500;
   color: #fff;
@@ -197,7 +197,7 @@ h6 {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
+  left: calc(-28%);
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -381,9 +381,8 @@ h6 {
   height: 80vh;
   background-image: url("../img/accueil-caph.jpeg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center !important;
-  background-attachment: fixed;
+  background-attachment: fixed; 
+  background-size: 100% 80vh;
 }
 
 #hero .container {
@@ -1604,4 +1603,41 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+#agendaCards{
+  margin-top: -10%;
+}
+
+#agendaCards .col{
+  transition: .3s;
+}
+
+.scrolled .col:hover{
+  cursor: pointer;
+  margin-top: 0!important;
+  transform: scale(1.02);
+}
+
+.scrolled .col{
+  margin: 0;
+}
+
+
+#agendaCards:not(.scrolled) .col:hover{
+  cursor: pointer;
+  margin-top: -1%!important;
+}
+
+#agenda-title:after{
+  transition: .2s;
+}
+.left-60:after{
+  left: calc(50% - 60px)!important;
+}
+.left-20:after{
+  left: calc(50% - 20px)!important;
+}
+.left--20:after{
+  left: calc(50% + 20px)!important;
 }

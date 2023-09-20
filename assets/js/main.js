@@ -71,13 +71,52 @@
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
+
+  $("#agendaCards").on('click', () => {
+    
+    $('html, body').animate({
+      scrollTop: $("#main").offset().top-100
+    }, 0);
+
+  })
+
+  $("#agendaCards .col").hover((e) => {
+    $("#agenda-title").removeClass()
+    $("#agenda-title").addClass("left-" + $(e.currentTarget).data('pixbar'))
+      console.log($(e.currentTarget).data('pixbar'));
+  })
+
   let selectHeader = select('#header')
   if (selectHeader) {
+    let scrolled = false
     const headerScrolled = () => {
-      if (window.scrollY > 100) {
+      if(window.scrollY < 500){
+        $("#agendaCards").css("margin-top", "calc(-10% + " + window.scrollY/5 + "px)")
+        $("#agendaCards").removeClass("scrolled")
+      }else{
+        $("#agendaCards").css("margin-top", "0")
+        $("#agendaCards").addClass("scrolled")
+      }
+
+      if (window.scrollY > 200) {
         selectHeader.classList.add('header-scrolled')
+        if(!scrolled){
+          $("#logoNavbar").fadeOut("fast", () => {
+            $("#logoNavbar").attr('src', 'assets/img/logo.png')
+            $("#logoNavbar").fadeIn()
+          })
+          scrolled = true
+        }
+
       } else {
         selectHeader.classList.remove('header-scrolled')
+        if(scrolled){
+          $("#logoNavbar").fadeOut("fast", () => {
+            $("#logoNavbar").attr('src', 'assets/img/favicon.png')
+            $("#logoNavbar").fadeIn()
+          })
+          scrolled = false
+        }
       }
     }
     window.addEventListener('load', headerScrolled)
