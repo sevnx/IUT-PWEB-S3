@@ -7,12 +7,12 @@ body {
 }
 
 a {
-  color: #9900FF;
+  color: #f0aa00;
   text-decoration: none;
 }
 
 a:hover {
-  color: #9900FF;
+  color: #f0aa00;
   text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #9900FF;
+  background: #f0aa00;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -171,10 +171,10 @@ h6 {
 }
 
 .navbar a:hover,
-.navbar .active,
+.header-scrolled .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #9900FF;
+  color: #f0aa00!important;
 }
 
 .navbar .getstarted,
@@ -191,7 +191,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #9900FF;
+  background: #f0aa00;
 }
 
 .navbar .dropdown ul {
@@ -229,7 +229,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #9900FF;
+  color: #f0aa00;
 }
 
 .navbar .dropdown:hover>ul {
@@ -373,6 +373,28 @@ h6 {
   visibility: visible !important;
 }
 
+
+#header-image {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../img/contact-site-internet.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 60vh;
+  position: relative;
+}
+
+#header-image h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -395,12 +417,14 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.6);
+  color: white;
   margin-bottom: 50px;
   font-size: 24px;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 
 #hero .btn-get-started {
@@ -428,6 +452,7 @@ h6 {
   transition: 0.5s;
   color: #fff;
   line-height: 1;
+  text-shadow: black 0.1em 0.1em 0.2em
 }
 
 #hero .btn-watch-video i {
@@ -556,6 +581,9 @@ section {
   margin-bottom: 0;
 }
 
+.carousel-item img{
+  border-radius: 15px!important;
+}
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -1612,16 +1640,11 @@ section {
 #agendaCards .col{
   transition: .3s;
 }
-
 .scrolled .col:hover{
   cursor: pointer;
-  margin-top: 0!important;
   transform: scale(1.02);
 }
 
-.scrolled .col{
-  margin: 0;
-}
 
 
 #agendaCards:not(.scrolled) .col:hover{

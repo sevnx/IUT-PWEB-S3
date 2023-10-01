@@ -90,11 +90,11 @@
   if (selectHeader) {
     let scrolled = false
     const headerScrolled = () => {
-      if(window.scrollY < 500){
+      if(window.scrollY < 450){
         $("#agendaCards").css("margin-top", "calc(-10% + " + window.scrollY/5 + "px)")
         $("#agendaCards").removeClass("scrolled")
       }else{
-        $("#agendaCards").css("margin-top", "0")
+        $("#agendaCards").css("margin-top", "calc(-10% + 90px)")
         $("#agendaCards").addClass("scrolled")
       }
 
