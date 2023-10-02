@@ -1,6 +1,6 @@
 /* -------------------------------------------------- START -------------------------------------------------- */
 
-/* ---------------------------------------- START - Configuration ---------------------------------------- */
+/* -------------------- START - Configuration -------------------- */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -18,7 +18,12 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Jost", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+  background: #f0aa00;
+  color: #fff;
 }
 
 /* -------------------- Start - Preloader -------------------- */
@@ -370,7 +375,6 @@ h1, h2, h3, h4, h5, h6 {
 #header-image {
   width: 100%;
   height: 60vh;
-  background-image: url("../img/contact.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 60vh;
@@ -407,8 +411,8 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -440,10 +444,6 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-}
-
-.carousel-item img {
-  border-radius: 15px!important;
 }
 
 /* -------------------- End - Sections -------------------- */
@@ -586,48 +586,48 @@ section {
   }
 }
 
-#agendaCards{
+#agendaCards {
   margin-top: -10%;
 }
 
-#agendaCards .col{
+#agendaCards .col {
   transition: .3s;
 }
-.scrolled .col:hover{
+.scrolled .col:hover {
   cursor: pointer;
   transform: scale(1.02);
 }
 
-#agendaCards:not(.scrolled) .col:hover{
+#agendaCards:not(.scrolled) .col:hover {
   cursor: pointer;
   margin-top: -1%!important;
 }
 
-#agenda-title:after{
+#agenda-title:after {
   transition: .2s;
 }
-.left-60:after{
+.left-60:after {
   left: calc(50% - 60px)!important;
 }
-.left-20:after{
+.left-20:after {
   left: calc(50% - 20px)!important;
 }
-.left--20:after{
+.left--20:after {
   left: calc(50% + 20px)!important;
 }
 
 /* -------------------- End - Footer -------------------- */
 
-/* ---------------------------------------- END - Configuration ---------------------------------------- */
+/* -------------------- END - Configuration -------------------- */
 
-/* ---------------------------------------- START - index.html ---------------------------------------- */
+/* -------------------- START - index.html -------------------- */
 
 /* -------------------- Start - Hero Section -------------------- */
 
 #hero {
   width: 100%;
   height: 80vh;
-  background-image: url("../img/home.jpeg");
+  background-image: url("../img/home.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 80vh;
@@ -638,7 +638,7 @@ section {
 }
 
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -648,7 +648,7 @@ section {
 
 #hero h2 {
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   font-size: 24px;
   text-shadow: black 0.1em 0.1em 0.2em
 }
@@ -668,7 +668,7 @@ section {
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: #f0aa00;
 }
 
 #hero .btn-watch-video {
@@ -784,7 +784,11 @@ section {
 
 /* -------------------- End - Partners -------------------- */
 
-/* ---------------------------------------- END - index.html ---------------------------------------- */
+.carousel-item img {
+  border-radius: 5px !important;
+}
+
+/* -------------------- END - index.html -------------------- */
 
 /*------------------------------------------------------------
 # Portfolio
@@ -1125,49 +1129,123 @@ section {
   }
 }
 
-/*------------------------------------------------------------
-# Breadcrumbs
-------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: #f3f5fa;
-  min-height: 40px;
-  margin-top: 72px;
+/* -------------------- START - news.html -------------------- */
+
+.header-news {
+  background-image: url("../img/news/news.jpg");
 }
 
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 68px;
-  }
+/* -------------------- END - news.html -------------------- */
+
+/* -------------------- START - calendar.html -------------------- */
+
+.header-calendar {
+  background-image: url("../img/news/calendar.jpg");
 }
 
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 600;
-  color: #1a1a1a;
+/* -------------------- END - calendar.html -------------------- */
+
+/* -------------------- START - publications.html -------------------- */
+
+.header-publications {
+  background-image: url("../img/news/publications.jpg");
 }
 
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 14px;
+/* -------------------- END - publications.html -------------------- */
+
+/* -------------------- START - videos.html -------------------- */
+
+.header-videos {
+  background-image: url("../img/news/videos.jpg");
 }
 
-.breadcrumbs ol li+li {
-  padding-left: 10px;
+/* -------------------- END - videos.html -------------------- */
+
+/* -------------------- START - towns.html -------------------- */
+
+.header-towns {
+  background-image: url("../img/territory/towns.jpg");
 }
 
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #4668a2;
-  content: "/";
+/* -------------------- END - towns.html -------------------- */
+
+/* -------------------- START - history.html -------------------- */
+
+.header-history {
+  background-image: url("../img/territory/history.jpg");
 }
 
-/* ---------------------------------------- START - contact.html ---------------------------------------- */
+/* -------------------- END - history.html -------------------- */
+
+/* -------------------- START - heritage.html -------------------- */
+
+.header-heritage {
+  background-image: url("../img/territory/heritage.jpg");
+}
+
+/* -------------------- END - heritage.html -------------------- */
+
+/* -------------------- START - geographic-location.html -------------------- */
+
+.header-geographic-location {
+  background-image: url("../img/territory/geographic-location.jpg");
+}
+
+/* -------------------- END - geographic-location.html -------------------- */
+
+/* -------------------- START - terroir.html -------------------- */
+
+.header-terroir {
+  background-image: url("../img/territory/terroir.jpg");
+}
+
+/* -------------------- END - terroir.html -------------------- */
+
+/* -------------------- START - administration.html -------------------- */
+
+.header-administration {
+  background-image: url("../img/institution/administration.jpg");
+}
+
+/* -------------------- END - administration.html -------------------- */
+
+/* -------------------- START - elects.html -------------------- */
+
+.header-elects {
+  background-image: url("../img/institution/elects.jpg");
+}
+
+/* -------------------- END - elects.html -------------------- */
+
+/* -------------------- START - useful-numbers.html -------------------- */
+
+.header-useful-numbers {
+  background-image: url("../img/institution/useful-numbers.jpg");
+}
+
+/* -------------------- END - useful-numbers.html -------------------- */
+
+/* -------------------- START - culture.html -------------------- */
+
+.header-culture {
+  background-image: url("../img/daily/culture.jpg");
+}
+
+/* -------------------- END - culture.html -------------------- */
+
+/* -------------------- START - sport.html -------------------- */
+
+.header-sport {
+  background-image: url("../img/daily/sport.jpg");
+}
+
+/* -------------------- END - sport.html -------------------- */
+
+/* -------------------- START - contact.html -------------------- */
+
+.header-contact {
+  background-image: url("../img/contact/contact.jpg");
+}
 
 .contact .info {
   border-top: 3px solid #1a1a1a;
@@ -1356,6 +1434,6 @@ section {
   }
 }
 
-/* ---------------------------------------- END - contact.html ---------------------------------------- */
+/* -------------------- END - contact.html -------------------- */
 
 /* -------------------------------------------------- END -------------------------------------------------- */
