@@ -124,7 +124,7 @@
   }
 
   /**
-   * Back to top button
+   * BackToTop Button
    */
   let backtotop = select('.back-to-top')
   if (backtotop) {
