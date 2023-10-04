@@ -1,5 +1,6 @@
 /* -------------------------------------------------- START -------------------------------------------------- */
 
+
 /* -------------------- START - Configuration -------------------- */
 
 body {
@@ -109,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(26, 26, 26, 0.9);
+  background: rgba(26, 26, 26, 0.85);
 }
 
 #header .logo {
@@ -411,7 +412,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -586,39 +587,22 @@ section {
   }
 }
 
-#agendaCards {
-  margin-top: -10%;
-}
-
-#agendaCards .col {
-  transition: .3s;
-}
-.scrolled .col:hover {
-  cursor: pointer;
-  transform: scale(1.02);
-}
-
-#agendaCards:not(.scrolled) .col:hover {
-  cursor: pointer;
-  margin-top: -1%!important;
-}
-
-#agenda-title:after {
-  transition: .2s;
-}
 .left-60:after {
-  left: calc(50% - 60px)!important;
+  left: calc(50% - 60px) !important;
 }
+
 .left-20:after {
-  left: calc(50% - 20px)!important;
+  left: calc(50% - 20px) !important;
 }
+
 .left--20:after {
-  left: calc(50% + 20px)!important;
+  left: calc(50% + 20px) !important;
 }
 
 /* -------------------- End - Footer -------------------- */
 
 /* -------------------- END - Configuration -------------------- */
+
 
 /* -------------------- START - index.html -------------------- */
 
@@ -651,24 +635,6 @@ section {
   margin-bottom: 15px;
   font-size: 24px;
   text-shadow: black 0.1em 0.1em 0.2em
-}
-
-#hero .btn-get-started {
-  font-family: "Jost", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 28px 11px 28px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px 0 0 0;
-  color: #fff;
-  background: #47b2e4;
-}
-
-#hero .btn-get-started:hover {
-  background: #f0aa00;
 }
 
 #hero .btn-watch-video {
@@ -756,6 +722,35 @@ section {
 
 /* -------------------- End - Hero Section -------------------- */
 
+/* -------------------- Start - Agenda Section -------------------- */
+
+#agendaCards {
+  margin-top: -11%;
+}
+
+#agendaCards .col {
+  transition: .3s;
+}
+.scrolled .col:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+#agendaCards:not(.scrolled) .col:hover {
+  cursor: pointer;
+  margin-top: -1% !important;
+}
+
+#agenda-title:after {
+  transition: .2s;
+}
+
+/* -------------------- End - Agenda Section -------------------- */
+
+.carousel-item img {
+  border-radius: 5px !important;
+}
+
 /* -------------------- Start - Partners -------------------- */
 
 .partners {
@@ -784,15 +779,17 @@ section {
 
 /* -------------------- End - Partners -------------------- */
 
-.carousel-item img {
-  border-radius: 5px !important;
-}
-
 /* -------------------- END - index.html -------------------- */
 
-/*------------------------------------------------------------
-# Portfolio
-------------------------------------------------------------*/
+
+/* -------------------- START - news.html -------------------- */
+
+.header-news {
+  background-image: url("../img/news/news.jpg");
+}
+
+/* -------------------- Start - Covers -------------------- */
+
 .portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
@@ -809,12 +806,16 @@ section {
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #47b2e4;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.portfolio #portfolio-flters li:hover {
+  background: #f0aa00;
   color: #fff;
 }
 
@@ -827,52 +828,28 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-img img {
-  transition: all 0.6s;
+  transition: all 0.4s;
 }
 
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
-  left: 15px;
+  left: 12px;
+  right: 12px;
   bottom: 0;
   z-index: 3;
-  right: 15px;
   transition: all 0.3s;
-  background: rgba(55, 81, 126, 0.8);
+  background: rgba(240, 170, 0, 0.85);
   padding: 10px 15px;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
-  font-size: 18px;
+  font-size: 15px;
+  text-align: center;
   color: #fff;
   font-weight: 600;
   color: #fff;
   margin-bottom: 0px;
-}
-
-.portfolio .portfolio-item .portfolio-info p {
-  color: #f9fcfe;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
-  position: absolute;
-  right: 40px;
-  font-size: 24px;
-  top: calc(50% - 18px);
-  color: #fff;
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #47b2e4;
-}
-
-.portfolio .portfolio-item .portfolio-info .details-link {
-  right: 10px;
 }
 
 .portfolio .portfolio-item:hover .portfolio-img img {
@@ -883,176 +860,10 @@ section {
   opacity: 1;
 }
 
-/*------------------------------------------------------------
-# Portfolio Details
-------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #47b2e4;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #47b2e4;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(55, 81, 126, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-/*------------------------------------------------------------
-# Team
-------------------------------------------------------------*/
-.team .member {
-  position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 5px;
-  background: #fff;
-  transition: 0.5s;
-  height: 100%;
-}
-
-.team .member .pic {
-  overflow: hidden;
-  width: 180px;
-  border-radius: 50%;
-}
-
-.team .member .pic img {
-  transition: ease-in-out 0.3s;
-}
-
-.team .member:hover {
-  transform: translateY(-10px);
-}
-
-.team .member .member-info {
-  padding-left: 30px;
-}
-
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #1a1a1a;
-}
-
-.team .member span {
-  display: block;
-  font-size: 15px;
-  padding-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-
-.team .member span::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 1px;
-  background: #cbd6e9;
-  bottom: 0;
-  left: 0;
-}
-
-.team .member p {
-  margin: 10px 0 0 0;
-  font-size: 14px;
-}
-
-.team .member .social {
-  margin-top: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.team .member .social a {
-  transition: ease-in-out 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  width: 32px;
-  height: 32px;
-  background: #eff2f8;
-}
-
-.team .member .social a i {
-  color: #1a1a1a;
-  font-size: 16px;
-  margin: 0 2px;
-}
-
-.team .member .social a:hover {
-  background: #47b2e4;
-}
-
-.team .member .social a:hover i {
-  color: #fff;
-}
-
-.team .member .social a+a {
-  margin-left: 8px;
-}
-
-/* -------------------- START - news.html -------------------- */
-
-.header-news {
-  background-image: url("../img/news/news.jpg");
-}
+/* -------------------- End - Covers -------------------- */
 
 /* -------------------- END - news.html -------------------- */
+
 
 /* -------------------- START - calendar.html -------------------- */
 
@@ -1062,13 +873,33 @@ section {
 
 /* -------------------- END - calendar.html -------------------- */
 
+
 /* -------------------- START - publications.html -------------------- */
 
 .header-publications {
   background-image: url("../img/news/publications.jpg");
 }
 
+/* -------------------- Start - Pictures -------------------- */
+
+.slide .pictures {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 15px;
+  overflow-x: auto;
+  
+}
+
+.slide .pictures .pictures-style {
+  width: 300px;
+  height: 400px;
+  
+}
+
+/* -------------------- End - Pictures -------------------- */
+
 /* -------------------- END - publications.html -------------------- */
+
 
 /* -------------------- START - videos.html -------------------- */
 
@@ -1078,6 +909,7 @@ section {
 
 /* -------------------- END - videos.html -------------------- */
 
+
 /* -------------------- START - towns.html -------------------- */
 
 .header-towns {
@@ -1085,6 +917,7 @@ section {
 }
 
 /* -------------------- END - towns.html -------------------- */
+
 
 /* -------------------- START - history.html -------------------- */
 
@@ -1094,6 +927,7 @@ section {
 
 /* -------------------- END - history.html -------------------- */
 
+
 /* -------------------- START - heritage.html -------------------- */
 
 .header-heritage {
@@ -1101,6 +935,7 @@ section {
 }
 
 /* -------------------- END - heritage.html -------------------- */
+
 
 /* -------------------- START - geographic-location.html -------------------- */
 
@@ -1110,6 +945,7 @@ section {
 
 /* -------------------- END - geographic-location.html -------------------- */
 
+
 /* -------------------- START - terroir.html -------------------- */
 
 .header-terroir {
@@ -1117,6 +953,7 @@ section {
 }
 
 /* -------------------- END - terroir.html -------------------- */
+
 
 /* -------------------- START - administration.html -------------------- */
 
@@ -1126,6 +963,7 @@ section {
 
 /* -------------------- END - administration.html -------------------- */
 
+
 /* -------------------- START - elects.html -------------------- */
 
 .header-elects {
@@ -1134,33 +972,42 @@ section {
 
 /* -------------------- END - elects.html -------------------- */
 
+
 /* -------------------- START - useful-numbers.html -------------------- */
 
 .header-useful-numbers {
   background-image: url("../img/institution/useful-numbers.jpg");
 }
 
-.faq .faq-list {
+.numbers-form {
+  margin-bottom: 15px;
+}
+
+.title-form {
+  font-weight: bold;
+}
+
+.numbers .numbers-list {
   padding: 0 100px;
 }
 
-.faq .faq-list ul {
+.numbers .numbers-list ul {
   padding: 0;
   list-style: none;
 }
 
-.faq .faq-list li+li {
+.numbers .numbers-list li+li {
   margin-top: 15px;
 }
 
-.faq .faq-list li {
+.numbers .numbers-list li {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
   position: relative;
 }
 
-.faq .faq-list a {
+.numbers .numbers-list a {
   display: block;
   position: relative;
   font-size: 16px;
@@ -1171,7 +1018,7 @@ section {
   cursor: pointer;
 }
 
-.faq .faq-list .icon-help {
+.numbers .numbers-list .icon-help {
   font-size: 24px;
   position: absolute;
   right: 0;
@@ -1179,47 +1026,48 @@ section {
   color: #1a1a1a;
 }
 
-.faq .faq-list .icon-show,
-.faq .faq-list .icon-close {
+.numbers .numbers-list .icon-show,
+.numbers .numbers-list .icon-close {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.faq .faq-list p {
+.numbers .numbers-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
 
-.faq .faq-list .icon-show {
+.numbers .numbers-list .icon-show {
   display: none;
 }
 
-.faq .faq-list a.collapsed {
+.numbers .numbers-list a.collapsed {
   color: #1a1a1a;
   transition: 0.3s;
 }
 
-.faq .faq-list a.collapsed:hover {
+.numbers .numbers-list a.collapsed:hover {
   color: #f0aa00;
 }
 
-.faq .faq-list a.collapsed .icon-show {
+.numbers .numbers-list a.collapsed .icon-show {
   display: inline-block;
 }
 
-.faq .faq-list a.collapsed .icon-close {
+.numbers .numbers-list a.collapsed .icon-close {
   display: none;
 }
 
 @media (max-width: 1200px) {
-  .faq .faq-list {
+  .numbers .numbers-list {
     padding: 0;
   }
 }
 
 /* -------------------- END - useful-numbers.html -------------------- */
+
 
 /* -------------------- START - culture.html -------------------- */
 
@@ -1229,6 +1077,7 @@ section {
 
 /* -------------------- END - culture.html -------------------- */
 
+
 /* -------------------- START - sport.html -------------------- */
 
 .header-sport {
@@ -1236,6 +1085,7 @@ section {
 }
 
 /* -------------------- END - sport.html -------------------- */
+
 
 /* -------------------- START - contact.html -------------------- */
 
@@ -1431,5 +1281,6 @@ section {
 }
 
 /* -------------------- END - contact.html -------------------- */
+
 
 /* -------------------------------------------------- END -------------------------------------------------- */
