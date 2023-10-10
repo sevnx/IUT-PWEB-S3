@@ -89,33 +89,35 @@
   let selectHeader = select('#header')
   if (selectHeader) {
     let scrolled = false
+    const currentPage = window.location.pathname.split("/").pop();
     const headerScrolled = () => {
-      if(window.scrollY < 450){
-        $("#agendaCards").css("margin-top", "calc(-11% + " + window.scrollY/5 + "px)")
-        $("#agendaCards").removeClass("scrolled")
-      }else{
-        $("#agendaCards").css("margin-top", "calc(-11% + 90px)")
-        $("#agendaCards").addClass("scrolled")
+      if (window.scrollY < 450) {
+        $("#agendaCards").css("margin-top", "calc(-11% + " + window.scrollY / 5 + "px)");
+        $("#agendaCards").removeClass("scrolled");
+      } else {
+        $("#agendaCards").css("margin-top", "calc(-11% + 90px)");
+        $("#agendaCards").addClass("scrolled");
       }
 
       if (window.scrollY > 200) {
-        selectHeader.classList.add('header-scrolled')
-        if(!scrolled){
+        selectHeader.classList.add('header-scrolled');
+        if (!scrolled) {
           $("#logoNavbar").fadeOut("fast", () => {
-            $("#logoNavbar").attr('src', 'src/assets/img/logo.png')
-            $("#logoNavbar").fadeIn()
-          })
-          scrolled = true
+            const logoPath = currentPage === "index.html" ? 'src/assets/img/logo.png' : '../../assets/img/logo.png';
+            $("#logoNavbar").attr('src', logoPath);
+            $("#logoNavbar").fadeIn();
+          });
+          scrolled = true;
         }
-
       } else {
-        selectHeader.classList.remove('header-scrolled')
-        if(scrolled){
+        selectHeader.classList.remove('header-scrolled');
+        if (scrolled) {
           $("#logoNavbar").fadeOut("fast", () => {
-            $("#logoNavbar").attr('src', 'src/assets/img/favicon.png')
-            $("#logoNavbar").fadeIn()
-          })
-          scrolled = false
+            const logoPath = currentPage === "index.html" ? 'src/assets/img/favicon.png' : '../../assets/img/favicon.png';
+            $("#logoNavbar").attr('src', logoPath);
+            $("#logoNavbar").fadeIn();
+          });
+          scrolled = false;
         }
       }
     }
