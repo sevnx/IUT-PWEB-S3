@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+  
   <!---------------------- Start - Initialization ---------------------->
-
+  
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link rel="icon" href="../../assets/img/favicon.png">
   <title>La Porte du Hainaut | Élus</title>
-    
+  
   <!---------------------- End - Initialization ---------------------->
   
   <!---------------------- Start - Tools ---------------------->
@@ -23,24 +23,25 @@
   <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="../../assets/css/style.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">
 
   <!---------------------- End - Tools ---------------------->
-
+  
   <!---------------------- Start - Google Fonts ---------------------->
-
+  
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
   
   <!---------------------- End - Google Fonts ---------------------->
-
+  
 </head>
 
 <body>
-
+  
   <!---------------------------------------------------- START ---------------------------------------------------->
   
   <!---------------------- Start - Header ---------------------->
-
+  
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       
@@ -90,18 +91,18 @@
   <!---------------------- End - Header ---------------------->
   
   <!---------------------- Start - Hero Section ---------------------->
-
+  
   <section id="header-image" class="header-elects" data-aos="fade-in" class="d-flex align-items-center">
-      <h1>L'Institution.</h1>
+    <h1>L'Institution.</h1>
   </section>
   
   <!---------------------- End - Hero Section ---------------------->
   
-  <div class="section-bg">
+  <div class="section-bg team">
     <main id="main" data-aos="fade-up">
       
       <!---------------------- Start - "Élus" Section ---------------------->
-
+      
       <section>
         <div class="container">
           
@@ -111,7 +112,28 @@
           </div>
           
           <div class="row">
-            <!-- ENTREZ VOTRE CONTENU ICI -->
+            <div class="col-sm" id="elect-search">
+              <div class="search">
+              <label for="search">Rechercher par Nom</label>
+              <input type="text"  class="form-control" id="search" placeholder="Ex : Robin">
+              </div>
+            </div>
+            <div class="col-sm" id="elect-filter">
+              <label for="choice">Option de Filtre</label>
+              <select id="choice" class="form-control">
+                <option value="">Tous</option>
+                <option value="Maire">Maire</option>
+                <option value="Exécutif">Exécutif</option>
+                <option value="Conseil communautaire">Conseil Communautaire</option>
+              </select>
+            </div>
+            <div class="col-sm-2">
+              <label style="opacity: 0;">Rechercher</label>
+              <button class="btn btn-orange w-100" id="button-result"><i class="fas fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+          <div class="row mt-5 d-flex justify-content-center" id="elects-row">
+            
           </div>
           
         </div>
@@ -123,7 +145,7 @@
   </div>
   
   <!---------------------- Start - Footer Section ---------------------->
-
+  
   <footer id="footer">
     
     <div class="footer-top">
@@ -147,7 +169,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="../../../index.html">Accueil</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="https://www.agglo-porteduhainaut.fr/mentions-legales">Mentions Légales</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="../institution/useful-numbers.html">Numéros Utiles</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Plan du Site</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../sitemap/site-map.html">Plan du Site</a></li>
             </ul>
           </div>
           
@@ -201,7 +223,8 @@
   
   <!-- main.js File -->
   <script src="../../assets/js/main.js"></script>
-  
+  <script src="../../assets/js/elects.js"></script>
+
   <!---------------------------------------------------- END ---------------------------------------------------->
   
 </body>

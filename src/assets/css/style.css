@@ -1,6 +1,5 @@
 /* -------------------------------------------------- START -------------------------------------------------- */
 
-
 /* -------------------- START - Configuration -------------------- */
 
 :root {
@@ -412,7 +411,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 60vh;
   background-repeat: no-repeat;
   background-attachment: fixed; 
-  background-size: 100% 60vh;
+  /* background-size: 100% 60vh; */
   position: relative;
 }
 
@@ -619,6 +618,13 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+
+  .w-50 {
+    width: 95% !important;
+  }
+  .partners {
+    padding: 10px !important;
+  }
 }
 
 .left-60:after {
@@ -636,7 +642,6 @@ section {
 /* -------------------- End - Footer -------------------- */
 
 /* -------------------- END - Configuration -------------------- */
-
 
 /* -------------------- START - index.html -------------------- */
 
@@ -699,8 +704,17 @@ section {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: auto;
     text-align: center;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  #header-image {
+    background-size: cover;
+    background-position: bottom;
+    height: auto !important;
+    padding-top: 25%;
   }
 
   #hero .animated {
@@ -789,7 +803,7 @@ section {
 /* -------------------- Start - Partners -------------------- */
 
 .partners {
-  padding: 12px 0;
+  padding: 3rem;
   text-align: center;
 }
 
@@ -815,7 +829,6 @@ section {
 /* -------------------- End - Partners -------------------- */
 
 /* -------------------- END - index.html -------------------- */
-
 
 /* -------------------- START - news.html -------------------- */
 
@@ -899,7 +912,6 @@ section {
 
 /* -------------------- END - news.html -------------------- */
 
-
 /* -------------------- START - calendar.html -------------------- */
 
 .header-calendar {
@@ -907,7 +919,6 @@ section {
 }
 
 /* -------------------- END - calendar.html -------------------- */
-
 
 /* -------------------- START - publications.html -------------------- */
 
@@ -934,7 +945,6 @@ section {
 /* -------------------- End - Pictures -------------------- */
 
 /* -------------------- END - publications.html -------------------- */
-
 
 /* -------------------- START - videos.html -------------------- */
 
@@ -964,7 +974,6 @@ section {
 
 /* -------------------- END - videos.html -------------------- */
 
-
 /* -------------------- START - towns.html -------------------- */
 
 .header-towns {
@@ -972,7 +981,6 @@ section {
 }
 
 /* -------------------- END - towns.html -------------------- */
-
 
 /* -------------------- START - history.html -------------------- */
 
@@ -982,7 +990,6 @@ section {
 
 /* -------------------- END - history.html -------------------- */
 
-
 /* -------------------- START - heritage.html -------------------- */
 
 .header-heritage {
@@ -990,7 +997,6 @@ section {
 }
 
 /* -------------------- END - heritage.html -------------------- */
-
 
 /* -------------------- START - geographic-location.html -------------------- */
 
@@ -1000,7 +1006,6 @@ section {
 
 /* -------------------- END - geographic-location.html -------------------- */
 
-
 /* -------------------- START - terroir.html -------------------- */
 
 .header-terroir {
@@ -1008,7 +1013,6 @@ section {
 }
 
 /* -------------------- END - terroir.html -------------------- */
-
 
 /* -------------------- START - administration.html -------------------- */
 
@@ -1018,15 +1022,105 @@ section {
 
 /* -------------------- END - administration.html -------------------- */
 
-
 /* -------------------- START - elects.html -------------------- */
 
 .header-elects {
   background-image: url("../img/institution/elects.png");
 }
 
-/* -------------------- END - elects.html -------------------- */
+.team .member {
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
 
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #222222;
+  margin: 0 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .member .social a i {
+  line-height: 0;
+}
+
+.team .member .social a:hover {
+  color: #3498db;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #222222;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.member-info{
+  transition: .2s;
+}
+.member-info:hover *{
+  transition: .2s;
+  color: white!important;
+}
+
+.member-info:hover{
+  background-color: #222222!important;
+  transition: .2s;
+  color: white!important;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+}
+
+/* -------------------- END - elects.html -------------------- */
 
 /* -------------------- START - useful-numbers.html -------------------- */
 
@@ -1121,7 +1215,6 @@ section {
 
 /* -------------------- END - useful-numbers.html -------------------- */
 
-
 /* -------------------- START - culture.html -------------------- */
 
 .header-culture {
@@ -1130,7 +1223,6 @@ section {
 
 /* -------------------- END - culture.html -------------------- */
 
-
 /* -------------------- START - sport.html -------------------- */
 
 .header-sport {
@@ -1138,7 +1230,6 @@ section {
 }
 
 /* -------------------- END - sport.html -------------------- */
-
 
 /* -------------------- START - contact.html -------------------- */
 
@@ -1310,7 +1401,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type=submit], .btn-orange {
   background: var(--black-color);
   border: 0;
   padding: 12px 34px;
@@ -1319,7 +1410,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type=submit]:hover, .btn-orange:hover {
   background: var(--yellow-color);
 }
 
@@ -1335,5 +1426,12 @@ section {
 
 /* -------------------- END - contact.html -------------------- */
 
+/* -------------------- START - site-map.html -------------------- */
+
+.header-site-map {
+  background-image: url("../img/sitemap/site-map.png");
+}
+
+/* -------------------- END - site-map.html -------------------- */
 
 /* -------------------------------------------------- END -------------------------------------------------- */

@@ -1,0 +1,963 @@
+{
+  "elects": [
+    {
+      "name": "AYMERIC ROBIN",
+      "jobs": [
+        "Président de la Communauté d'Agglomération de La Porte du Hainaut",
+        "Maire de Raismes - Transitions, aménagement et mobilités"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "raismes_aymeric_robin.jpg"
+    },
+    {
+      "name": "MICHEL QUIÉVY",
+      "jobs": [
+        "Maire de Mortagne-du-Nord -Emploi, insertion et économie sociale et solidaire",
+        "1er Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "mortagne_du_nord_michel_quievy.jpg"
+    },
+    {
+      "name": "ANNE-LISE DUFOUR-TONINI",
+      "jobs": [
+        "Maire de Denain - Développement et stratégie foncière économique",
+        "2e Vice-présidente"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain_anne-lise_dufour-tonini.jpg"
+    },
+    {
+      "name": "SALVATORE CASTIGLIONE",
+      "jobs": [
+        "Maire de Wallers-Arenberg - Développement du patrimoine UNESCO",
+        "Arenberg Creative Mine",
+        "Enseignement supérieur",
+        "3e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "wallers_arenberg_salvatore_castiglione.jpg"
+    },
+    {
+      "name": "BRUNO SALIGOT",
+      "jobs": [
+        "Maire d'Escaudain- Environnement, prévention des risques naturels et eco-responsabilité",
+        "4e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "escaudain_bruno_saligot.jpg"
+    },
+    {
+      "name": "PASCAL JEAN",
+      "jobs": [
+        "Maire de Neuville-sur-Escaut - Habitat, logement et attractivité résidentielle",
+        "5e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "neuvilles_sur_escaut_pascal_jean.jpg"
+    },
+    {
+      "name": "ISABELLE DENIZON-ZAWIEJA",
+      "jobs": [
+        "Adjointe au maire de Rœulx - Culture et animation territoriale",
+        "6e Vice-présidente"
+      ],
+      "tags": [
+        "Exécutif",
+        "Conseil communautaire"
+      ],
+      "imagePath": "roeulx_isabelle_denizon_zawieja.jpg"
+    },
+    {
+      "name": "NATHALIE COLIN",
+      "jobs": [
+        "Maire de Rosult - Développement rural, agriculture et circuits courts",
+        "7e Vice-présidente"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "rosult_nathalie_colin.jpg"
+    },
+    {
+      "name": "JEAN-MARC MONDINO",
+      "jobs": [
+        "Adjoint au maire de Saint-Amand-les-Eaux  - Promotion touristique du territoire et relations transfrontalières",
+        "8e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Conseil communautaire"
+      ],
+      "imagePath": "saint_amand_les_eaux_jean_marc_mondino.jpg"
+    },
+    {
+      "name": "JEAN-FRANÇOIS DELATTRE",
+      "jobs": [
+        "Maire de Haspres Finances et pacte de solidarité communautaire",
+        "9e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "thun_saint_amand_jean_noel_broquet.jpg"
+    },
+    {
+      "name": "DALILA DUWEZ-GUESMIA",
+      "jobs": [
+        "Maire de Lourches - Politique de la ville, cohésion sociale et renouvellement urbain",
+        "10e Vice-présidente"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "lourches_dalila_duwez_guesmia.jpg"
+    },
+    {
+      "name": "JEAN-NOËL BROQUET",
+      "jobs": [
+        "Maire de Thun-Saint-Amand - Schéma de mutualisation et modernisation de l'action publique",
+        "11e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "thun_saint_amand_jean_noel_broquet.jpg"
+    },
+    {
+      "name": "JEAN-PAUL RYCKELYNCK",
+      "jobs": [
+        "Maire de Haveluy - Vie sportive et sport-santé",
+        "12e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "haveluy_jean_paul_ryckelynck.jpg"
+    },
+    {
+      "name": "JEAN-MICHEL MICHALAK",
+      "jobs": [
+        "Maire de Sars-et-Rosières - Stratégie numérique et communication digitale",
+        "13e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "sars_et_rosieres_jean_michel_michalak.jpg"
+    },
+    {
+      "name": "CHRISTOPHER PANNIER",
+      "jobs": [
+        "Maire de Bruille-Saint-Amand - Commerce, artisanat et l'emploi de proximité",
+        "14e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "bruille_saint_amand_christophe_pannier.jpg"
+    },
+    {
+      "name": "JEAN-CLAUDE MESSAGER",
+      "jobs": [
+        "Maire de Lecelles - Gestion du cycle de l'eau et assainissement",
+        "15e Vice-président"
+      ],
+      "tags": [
+        "Exécutif",
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "lecelles_jean_claude_messager.jpg"
+    },
+    {
+      "name": "PATRICK KOWALCZYK",
+      "jobs": [
+        "Maire de Abscon"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "abson_patrick_kowalczyk.jpg"
+    },
+    {
+      "name": "CLAUDE RÉGNIEZ",
+      "jobs": [
+        "Maire de Avesnes-le-Sec"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "avesnes_le_sec_claude_regniez.jpg"
+    },
+    {
+      "name": "MICHEL BLAISE",
+      "jobs": [
+        "Maire de Bellaing"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "bellaing_michel_blaisebd.jpg"
+    },
+    {
+      "name": "LUDOVIC ZIENTEK",
+      "jobs": [
+        "Maire de Bouchain"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "bouchain_ludovic_zientek.jpg"
+    },
+    {
+      "name": "VÉRONIQUE LEROY",
+      "jobs": [
+        "Maire de Bousignies"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "bousignies_veronique_leroy.jpg"
+    },
+    {
+      "name": "CAROLE LELEU",
+      "jobs": [
+        "Maire de Brillon"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "brillon_carole_leleu.jpg"
+    },
+    {
+      "name": "WALDEMAR DOMIN",
+      "jobs": [
+        "Maire de Château-l'Abbaye"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "chateau_labbaye_waldemar_domin.jpg"
+    },
+    {
+      "name": "MICHEL VÉNIAT",
+      "jobs": [
+        "Maire de Douchy-les-Mines"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "douchy_les_mines_michel_veniat.jpg"
+    },
+    {
+      "name": "JOËL LEGRAND-DELHAYE",
+      "jobs": [
+        "Maire de Escautpont"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "escaupont_joelle_legrand_delhaye.jpg"
+    },
+    {
+      "name": "BERNARD LEBRUN-VANDERMOUTEN",
+      "jobs": [
+        "Maire de Flines-lez-Mortagne"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "flines_lez_mortagne_bernard_lebrun_vandermouten.jpg"
+    },
+    {
+      "name": "ANDRÉ DESMEDT",
+      "jobs": [
+        "Maire de Hasnon"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "hasnon_andre_desmedt.jpg"
+    },
+    {
+      "name": "BRUNO RACZKIEWICZ",
+      "jobs": [
+        "Maire de Haulchin"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "haulchin_bruno_raczkiewicz.jpg"
+    },
+    {
+      "name": "STÉPHANIE HUGUES",
+      "jobs": [
+        "Maire de Hélesmes"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "helesmes_stephanie_hugues.jpg"
+    },
+    {
+      "name": "JEAN-PAUL COMYN",
+      "jobs": [
+        "Maire d'Hérin"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "herin_jean_paul_comyn.jpg"
+    },
+    {
+      "name": "ARNAUD BAVAY",
+      "jobs": [
+        "Maire de Hordain"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "hordain_arnaud_bavay.jpg"
+    },
+    {
+      "name": "ÉRIC BLONDIAUX",
+      "jobs": [
+        "Maire de La Sentinelle"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "la_sentinelle_eric_blondiauxbd.jpg"
+    },
+    {
+      "name": "JEAN-MICHEL DENHEZ",
+      "jobs": [
+        "Maire de Lieu-Saint-Amand"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "lieu_saint_amand_jean_michel_denhez.jpg"
+    },
+    {
+      "name": "JEAN-MARIE TONDEUR",
+      "jobs": [
+        "Maire de Marquette-en-Ostrevant"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "marquette_en_ostrevant_jean_marie_tondeur.jpg"
+    },
+    {
+      "name": "LUDOVIC AIGUIER",
+      "jobs": [
+        "Maire de Mastaing"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "mastaing_ludovic_aiguier.jpg"
+    },
+    {
+      "name": "NICOLAS BOUCHEZ",
+      "jobs": [
+        "Maire de Maulde"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "maulde-a-nicolas_bouchezbd.jpg"
+    },
+    {
+      "name": "GÉRALD THURU",
+      "jobs": [
+        "Maire de Millonfosse"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "milonfosse_gerald_thuru.jpg"
+    },
+    {
+      "name": "JACQUES DUBOIS",
+      "jobs": [
+        "Maire de Nivelle"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "nivelle_jacques_dubois.jpg"
+    },
+    {
+      "name": "DANIEL SAUVAGE",
+      "jobs": [
+        "Maire de Noyelles-sur-Selle"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "noyelles_sur_selle_daniel_sauvage.jpg"
+    },
+    {
+      "name": "BRUNO LEJEUNE",
+      "jobs": [
+        "Maire de Oisy"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "oisy_bruno_lejeune.jpg"
+    },
+    {
+      "name": "CHARLES LEMOINE",
+      "jobs": [
+        "Maire de Rœulx"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "roeulx_charles_lemoine.jpg"
+    },
+    {
+      "name": "ANNE-SOPHIE GHESQUIÈRE",
+      "jobs": [
+        "Maire de Rumegies"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "rumegies_anne_sophie_ghesquiere.jpg"
+    },
+    {
+      "name": "STÉPHANIE WATTIEZ",
+      "jobs": [
+        "Élue de Thiant",
+        "Conseillère Communautaire"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "thiant_stephanie_wattiez.jpg"
+    },
+    {
+      "name": "DOMINIQUE SAVARY",
+      "jobs": [
+        "Maire de Trith-Saint-Léger"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "1f9a7074.jpg"
+    },
+    {
+      "name": "ANNIE AVÉ-DELATTRE",
+      "jobs": [
+        "Maire de Wasnes-au-Bac"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "wasnes_au_bac_annie_ave_delattre.jpg"
+    },
+    {
+      "name": "JACQUES DELCROIX",
+      "jobs": [
+        "Maire de Wavrechain-sous-Denain"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "wavrechain-sous-denain-a-jacques_delcroix-2014.jpg"
+    },
+    {
+      "name": "ANDRÉ LEPRÊTRE",
+      "jobs": [
+        "Maire de Wavrechain-sous-Faulx"
+      ],
+      "tags": [
+        "Maire",
+        "Conseil communautaire"
+      ],
+      "imagePath": "wavrechain_sous_faulx_andre_lepretre.jpg"
+    },
+    {
+      "name": "CHRISTINE NELAIN",
+      "jobs": [
+        "Adjointe au maire d'Abscon"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "abscon_christine_nelain.jpg"
+    },
+    {
+      "name": "ANY BROWERS",
+      "jobs": [
+        "Adjointe au maire de Bouchain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "bouchain_any_browers.jpg"
+    },
+    {
+      "name": "DAVID AUDIN",
+      "jobs": [
+        "Adjoint au maire de Denain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain_david_audin.jpg"
+    },
+    {
+      "name": "STÉPHANIE CARPENTIER BORTOLOTTI",
+      "jobs": [
+        "Conseillère municipale de Denain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain_stephanie_carpentier_-_bortolottibd.jpg"
+    },
+    {
+      "name": "BERNARD BIREMBAUT",
+      "jobs": [
+        "Conseiller municipal de Denain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain_bernard_birembaut.jpg"
+    },
+    {
+      "name": "ANNIE DENIS",
+      "jobs": [
+        "Conseillère municipale de Denain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain-annie_denisbd.jpg"
+    },
+    {
+      "name": "YANNICK ANDRZEJCZAK",
+      "jobs": [
+        "Conseiller municipal de Denain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain_yannick_andrzejczak.jpg"
+    },
+    {
+      "name": "VALÉRIE CARTA",
+      "jobs": [
+        "Conseillère municipale de Denain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain_valerie_carta.jpg"
+    },
+    {
+      "name": "YOUSSOUF FEDDAL",
+      "jobs": [
+        "Conseiller municipal de Denain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain_youssouf_feddal.jpg"
+    },
+    {
+      "name": "JOSHUA HOCHART",
+      "jobs": [
+        "Conseiller municipal de Denain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain_joshua_hochart.jpg"
+    },
+    {
+      "name": "MICHÈLE DANDOIS",
+      "jobs": [
+        "Conseillère municipale de Denain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "denain_michele_dandois.jpg"
+    },
+    {
+      "name": "ALEXANDRA PULLIAT",
+      "jobs": [
+        "Adjointe au maire de Douchy-les-Mines"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "douchy_les_mines_alexandra_pulliat.jpg"
+    },
+    {
+      "name": "ROMAIN MERVILLE",
+      "jobs": [
+        "Adjoint au maire de Douchy-les-Mines"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "douchy_les_mines_romain_merville.jpg"
+    },
+    {
+      "name": "RÉGINE GUILAIN",
+      "jobs": [
+        "Adjointe au maire de Douchy-les-Mines"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "douchy_les_mines_regine_guilain.jpg"
+    },
+    {
+      "name": "FRANCIS WOJTOWICZ",
+      "jobs": [
+        "Adjoint au maire de Douchy-les-Mines"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "douchy-franciswojtowiczbd.jpg"
+    },
+    {
+      "name": "ANNICK TRIOUX",
+      "jobs": [
+        "Adjointe au maire d'Escaudain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "escaudain_annick_troux.jpg"
+    },
+    {
+      "name": "ALI BENAMARA",
+      "jobs": [
+        "Adjoint au maire d'Escaudain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "escaudain_ali_benamara.jpg"
+    },
+    {
+      "name": "SYLVIE SCHUTT",
+      "jobs": [
+        "Conseillère municipale d'Escaudain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "escaudain_sylvie_schutt.jpg"
+    },
+    {
+      "name": "CATHERINE MERCIER-DHENNAIN",
+      "jobs": [
+        "Conseillère municipale d'Escaudain"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "escaudain_catherine_mercier_dhennain.jpg"
+    },
+    {
+      "name": "DANIEL HERLAUD",
+      "jobs": [
+        "Adjoint au maire d'Escautpont"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "escaupont_daniel_herlaud.jpg"
+    },
+    {
+      "name": "CATHERINE DERONNE",
+      "jobs": [
+        "Conseillère municipale d'Hasnon"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "hasnon_catherie_deronne.jpg"
+    },
+    {
+      "name": "DIDIER GRÉGOR",
+      "jobs": [
+        "Conseiller municipal de Lourches"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "lourches_didier_gregor.jpg"
+    },
+    {
+      "name": "SYLVIA POTIER",
+      "jobs": [
+        "Adjointe au maire de Raismes"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "raismes_sylvia_potierbd.jpg"
+    },
+    {
+      "name": "PATRICK TRIFI",
+      "jobs": [
+        "Adjoint au maire de Raismes"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "raismes_patrick_trifi.jpg"
+    },
+    {
+      "name": "KARINE LIPPERT",
+      "jobs": [
+        "Conseillère Communautaire de Raismes"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "dsc_7552.jpg"
+    },
+    {
+      "name": "ÉRIC WARMOËS",
+      "jobs": [
+        "Conseiller municipal de Raismes"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "raismes_eric_warmoes.jpg"
+    },
+    {
+      "name": "MARIE-JOSÉ PIREZ-PAILLOUSSE",
+      "jobs": [
+        "Conseillère municipale de Raismes"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "raismes_marie_josee_pirez_paillousse.jpg"
+    },
+    {
+      "name": "EDDY ZDZIECH",
+      "jobs": [
+        "Conseiller municipal de Raismes"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "raimes_eddy_zdziech.jpg"
+    },
+    {
+      "name": "CÉCILE GRASSO-NOWAK",
+      "jobs": [
+        "Adjointe au maire de Saint-Amand-les-Eaux"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "saint-amand-2_-_cecile_grasso.jpg"
+    },
+    {
+      "name": "PATRICK DUFOUR",
+      "jobs": [
+        "Conseiller municipal de Saint-Amand-les-Eaux"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "saint_amand_les_eaux_patrick_dufourbd.jpg"
+    },
+    {
+      "name": "FABIEN ROUSSEL",
+      "jobs": [
+        "Conseiller municipal de Saint-Amand-les-Eaux"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "saint-amand-les-eaux_fabien_roussel.jpg"
+    },
+    {
+      "name": "NOURA ATMANI",
+      "jobs": [
+        "Conseillère municipale de Saint-Amand-les-Eaux"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "saint_amand_les_eaux_noura_atmani.jpg"
+    },
+    {
+      "name": "HÉLÈNE DA SILVA - COLLIER",
+      "jobs": [
+        "Conseillère municipale de Saint-Amand-les-Eaux"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "saint_amand_les_eaux_helene_da_silva.jpg"
+    },
+    {
+      "name": "DIDIER LEGRAIN",
+      "jobs": [
+        "Conseiller municipal de Saint-Amand-les-Eaux"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "saint_amand_les_eaux_didier_legrain.jpg"
+    },
+    {
+      "name": "PASCALE TEITE",
+      "jobs": [
+        "Conseillère municipale de Saint-Amand-les-Eaux"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "saint_amand_les_eaux_pascal_teite.jpg"
+    },
+    {
+      "name": "ÉRIC RENAUD",
+      "jobs": [
+        "Conseiller municipal de Saint-Amand-les-Eaux"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "saint_amand_les_eaux_eric_renaud.jpg"
+    },
+    {
+      "name": "MALIKA YAHIAOUI",
+      "jobs": [
+        "Adjointe au maire de Trith-Saint-Léger"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "trith_saint_leger_malika_yahiaoui.jpg"
+    },
+    {
+      "name": "CHRISTOPHE VANHERSECKER",
+      "jobs": [
+        "Conseiller municipal de Trith-Saint-Léger"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "trith_saint_leger_christophe_vanhersecker.jpg"
+    },
+    {
+      "name": "LAURENCE SZYMONIAK-ROLAIN",
+      "jobs": [
+        "Conseillère municipale de Wallers-Arenberg"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "wallers_arenberg_laurence_szymoniak_-_rolainbd.jpg"
+    },
+    {
+      "name": "BERNARD CARON",
+      "jobs": [
+        "Conseiller municipale de Wallers-Arenberg"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "wallers_arenberg_bernard_caron.jpg"
+    },
+    {
+      "name": "MARIE-JEANNE LASSELIN",
+      "jobs": [
+        "Conseillère municipale d'Hérin"
+      ],
+      "tags": [
+        "Conseil communautaire"
+      ],
+      "imagePath": "herin_marie_jeanne_lasselin_.jpg"
+    }
+  ]
+}
