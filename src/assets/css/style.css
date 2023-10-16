@@ -1404,6 +1404,7 @@ section {
 .contact .php-email-form button[type=submit], .btn-orange {
   background: var(--black-color);
   border: 0;
+  padding: 12px 34px;
   color: var(--white-color);
   transition: 0.4s;
   border-radius: 50px;
@@ -1432,102 +1433,5 @@ section {
 }
 
 /* -------------------- END - site-map.html -------------------- */
-
-/*--------------------------------------------------------------
-# Team
---------------------------------------------------------------*/
-.team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.team .member .member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.85);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #222222;
-  margin: 0 10px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team .member .social a i {
-  line-height: 0;
-}
-
-.team .member .social a:hover {
-  color: #3498db;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .member .member-info {
-  padding: 25px 15px;
-}
-
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #222222;
-}
-
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.member-info{
-  transition: .2s;
-}
-.member-info:hover *{
-  transition: .2s;
-  color: white!important;
-}
-
-.member-info:hover{
-  background-color: #222222!important;
-  transition: .2s;
-  color: white!important;
-}
-
-.team .member:hover .social {
-  opacity: 1;
-}
-
 
 /* -------------------------------------------------- END -------------------------------------------------- */
