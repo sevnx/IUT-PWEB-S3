@@ -166,6 +166,25 @@ h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- End - Header -------------------- */
 
+#header-image {
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  position: relative;
+}
+
+#header-image h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--white-color);
+  text-shadow: black 0.1em 0.1em 0.2em;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}
+
 /* -------------------- Start - Navigation Menu -------------------- */
 
 /* Desktop Navigation */
@@ -321,24 +340,22 @@ h1, h2, h3, h4, h5, h6 {
   
   #navbar.active .mobile-nav-toggle {
     position: absolute;
-    top: 15px;
+    top: 30px;
     right: 15px;
   }
   
   #navbar ul:first-child {
-    padding-top: 50%!important;
+    padding-top: 50% !important;
     opacity: 0;
     padding: 10px 0;
     transition: all 0.5s;
     display: block;
   }
   
-  #navbar.active ul:first-child{
+  #navbar.active ul:first-child {
     opacity: 1;
     transition: all 0.5s;
   }
-  
-
   
   #navbar ul {
     display: none;
@@ -353,8 +370,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
   }
 
-  
-
   #navbar.active {
     position: fixed;
     overflow: hidden;
@@ -362,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(40, 58, 90, 0.9);
+    background: var(--black-color);
     transition: 0.3s;
     z-index: 999;
   }
@@ -415,66 +430,58 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   #navbar ul:not(:first-child) {
-    display: block!important;
+    display: block !important;
     transition: all .2s;
     margin: 0;
     padding: 0;
     max-height: 0px;
-    opacity: 0!important;
+    opacity: 0 !important;
   }
 
-  #navbar .dropdown ul{
+  #navbar .dropdown ul {
     overflow: hidden;
   }
+
   #navbar .dropdown>.dropdown-active {
     margin: 10px 20px;
     padding: 10px 0;
     visibility: visible !important;
     max-height: 400px;
     transition: all .2s;
-    opacity: 1!important;
+    opacity: 1 !important;
     padding: 10px 0;
   }
-  
 }
 
-
 .menu {
-  --s: 25px; /* control the size */
-  --c: white; /* the color */
-  
+  --s: 25px;
+  --c: var(--white-color);
   height: var(--s);
   aspect-ratio: 1;
   border: none;
   padding: 0;
   border-inline: calc(var(--s)/2) solid #0000; 
   box-sizing: content-box;
-  --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) 
-  no-repeat content-box border-box;
-  --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) 
-  repeat-y content-box border-box;
-  background: 
-  var(--_g2) left  var(--_p,0px) top,
+  --_g1: linear-gradient(var(--c) 20%,#0000 0 80%,var(--c) 0) no-repeat content-box border-box;
+  --_g2: radial-gradient(circle closest-side at 50% 12.5%,var(--c) 95%,#0000) repeat-y content-box border-box;
+  background: var(--_g2) left  var(--_p,0px) top,
   var(--_g1) left  calc(var(--s)/10 + var(--_p,0px)) top,
   var(--_g2) right var(--_p,0px) top,
   var(--_g1) right calc(var(--s)/10 + var(--_p,0px)) top;
-  background-size: 
-  20% 80%,
-  40% 100%;
+  background-size: 20% 80%, 40% 100%;
   position: relative;
   clip-path: inset(0 25%);
-  -webkit-mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000);
+  mask: linear-gradient(90deg,#0000,#000 25% 75%,#0000);
   cursor: pointer;
-  transition: 
-  background-position .3s var(--_s,.3s), 
-  clip-path 0s var(--_s,.6s);
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  appearance:none;
+  transition: background-position .3s var(--_s,.3s), clip-path 0s var(--_s,.6s);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
+
 .menu:before,
 .menu:after {
-  content:"";
+  content: "";
   position: absolute;
   border-radius: var(--s);
   inset: 40% 0;
@@ -487,45 +494,25 @@ h1, h2, h3, h4, h5, h6 {
   --_p: calc(-1*var(--s));
   --_s: 0s;
 }
+
 .menu.activated:before {
   transform: rotate(45deg);
-  background-color: #000;
+  background-color: var(--black-color);
   transition: background-color 1s;
 }
+
 .menu.activated:after {
   transform: rotate(-45deg);
-  background-color: #000;
+  background-color: var(--black-color);
   transition: background-color 1s;
 }
+
 .menu:focus-visible {
   clip-path: none;
-  -webkit-mask: none;
+  mask: none;
   border: none;
   outline: 2px solid var(--c);
   outline-offset: 5px;
-}
-
-
-
-
-#header-image {
-  width: 100%;
-  height: 60vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  /* background-size: 100% 60vh; */
-  position: relative;
-}
-
-#header-image h1 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: var(--white-color);
-  text-shadow: black 0.1em 0.1em 0.2em;
-  position: absolute;
-  left: 10%;
-  bottom: 10%;
 }
 
 /* -------------------- End - Navigation Menu -------------------- */
@@ -768,14 +755,14 @@ section {
   font-weight: 700;
   line-height: 56px;
   color: var(--white-color);
-  text-shadow: black 0.1em 0.1em 0.2em
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 #hero h2 {
   color: var(--white-color);
   margin-bottom: 15px;
   font-size: 24px;
-  text-shadow: black 0.1em 0.1em 0.2em
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 #hero .btn-watch-video {
@@ -785,7 +772,7 @@ section {
   transition: 0.5s;
   color: var(--white-color);
   line-height: 1;
-  text-shadow: black 0.1em 0.1em 0.2em
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 #hero .btn-watch-video i {
@@ -940,12 +927,12 @@ section {
 
 /* -------------------- Start - Covers -------------------- */
 
-.portfolio #portfolio-flters {
+.portfolio #news-flters {
   list-style: none;
   margin-bottom: 20px;
 }
 
-.portfolio #portfolio-flters li {
+.portfolio #news-flters li {
   cursor: pointer;
   display: inline-block;
   margin: 10px 5px;
@@ -959,12 +946,12 @@ section {
   font-family: "Montserrat", sans-serif;
 }
 
-.portfolio #portfolio-flters li.filter-active {
+.portfolio #news-flters li.filter-active {
   background: var(--black-color);
   color: var(--white-color);
 }
 
-.portfolio #portfolio-flters li:hover {
+.portfolio #news-flters li:hover {
   background: var(--yellow-color);
   color: var(--white-color);
 }
@@ -1071,7 +1058,6 @@ section {
     width: 100%;
     clear: both;
   }
-  
 }
 
 /* -------------------- END - videos.html -------------------- */
@@ -1130,53 +1116,31 @@ section {
   background-image: url("../img/institution/elects.png");
 }
 
+.elect-s-search {
+  background: var(--black-color);
+  border: 0;
+  color: var(--white-color);
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.elect-s-search:hover {
+  background: var(--yellow-color);
+}
+
+/* -------------------- Start - Elect's List -------------------- */
+
 .team .member {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
-  background: #fff;
+  background: var(--white-color);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .team .member .member-img {
   position: relative;
   overflow: hidden;
-}
-
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.85);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: #222222;
-  margin: 0 10px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team .member .social a i {
-  line-height: 0;
-}
-
-.team .member .social a:hover {
-  color: #3498db;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
 }
 
 .team .member .member-info {
@@ -1187,40 +1151,38 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #222222;
+  color: var(--black-color);
 }
 
 .team .member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
+  color: var(--lightgray-color);
 }
 
 .team .member .member-info p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
-  color: #777777;
+  color: var(--lightgray-color);
 }
 
-.member-info{
+.member-info {
   transition: .2s;
 }
 .member-info:hover *{
   transition: .2s;
-  color: white!important;
+  color: var(--white-color) !important;
 }
 
-.member-info:hover{
-  background-color: #222222!important;
+.member-info:hover {
+  background-color: var(--black-color) !important;
   transition: .2s;
-  color: white!important;
+  color: var(--white-color) !important;
 }
 
-.team .member:hover .social {
-  opacity: 1;
-}
+/* -------------------- End - Elect's List -------------------- */
 
 /* -------------------- END - elects.html -------------------- */
 
@@ -1412,7 +1374,7 @@ section {
   color: var(--white-color);
 }
 
-.contact .php-email-form {
+.contact .email-form {
   width: 100%;
   border-top: 3px solid var(--black-color);
   border-bottom: 3px solid var(--black-color);
@@ -1421,11 +1383,11 @@ section {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .validate {
+.contact .email-form .validate {
   display: none;
   color: var(--red-color);
   margin: 0 0 15px 0;
@@ -1433,7 +1395,7 @@ section {
   font-size: 13px;
 }
 
-.contact .php-email-form .error-message {
+.contact .email-form .error-message {
   display: none;
   color: var(--white-color);
   background: var(--orange-color);
@@ -1442,11 +1404,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.contact .email-form .sent-message {
   display: none;
   color: var(--white-color);
   background: var(--green-color);
@@ -1455,14 +1417,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .email-form .loading {
   display: none;
   background: var(--white-color);
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.contact .email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1474,36 +1436,36 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   margin-bottom: 20px;
 }
 
-.contact .php-email-form label {
+.contact .email-form label {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .email-form input,
+.contact .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
   border-color: var(--yellow-color);
 }
 
-.contact .php-email-form input {
+.contact .email-form input {
   height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit], .btn-orange {
+.contact .email-form button[type=submit], .btn-orange {
   background: var(--black-color);
   border: 0;
   padding: 12px 34px;
@@ -1512,7 +1474,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover, .btn-orange:hover {
+.contact .email-form button[type=submit]:hover, .btn-orange:hover {
   background: var(--yellow-color);
 }
 
@@ -1532,6 +1494,20 @@ section {
 
 .header-site-map {
   background-image: url("../img/sitemap/site-map.png");
+}
+
+.plan {
+  display: flex;
+  justify-content: center;
+}
+
+.plan ul {
+  list-style-position: inside;
+  text-align: left;
+}
+
+.plan ul:last-child {
+  margin-bottom: 0;
 }
 
 /* -------------------- END - site-map.html -------------------- */
