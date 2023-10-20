@@ -32,10 +32,7 @@ function addResultButtonListener(){
     const resultButton = document.getElementById("button-result");
     const resultDiv = document.getElementById("elects-row");
     resultButton.addEventListener("click", function(){
-        if (isChoiceFilter())
-            populateElectsRow(resultDiv, getFilterTag());
-        else if (isChoiceSearch())
-            populateElectsRow(resultDiv, null, getSearchName());
+        populateElectsRow(resultDiv, getFilterTag(), getSearchName());
     });
 }
 

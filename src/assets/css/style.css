@@ -866,6 +866,8 @@ section {
 }
 
 #agendaCards .col {
+  position: relative;
+  top: 0;
   transition: .3s;
 }
 .scrolled .col:hover {
@@ -875,7 +877,7 @@ section {
 
 #agendaCards:not(.scrolled) .col:hover {
   cursor: pointer;
-  margin-top: -1% !important;
+  top: -40px;
 }
 
 #agenda-title:after {
@@ -1145,6 +1147,8 @@ section {
 
 .team .member .member-info {
   padding: 25px 15px;
+  height: 100%;
+  cursor: pointer;
 }
 
 .team .member .member-info h4 {
