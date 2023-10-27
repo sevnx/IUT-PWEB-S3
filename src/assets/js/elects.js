@@ -1,6 +1,8 @@
+/* -------------------------------------------------- START -------------------------------------------------- */
+
 const electsFromJson = getElects();
 
-window.onload = function () {
+window.onload = function (){
     const container = document.getElementById("elects-row");
     populateElectsRow(container);
     // addFilterSearchChoiceButtonListener();
@@ -20,7 +22,7 @@ function addFilterSearchChoiceButtonListener(){
         divToHide = document.getElementById("elect-search");
         showAndHideDiv(divToShow, divToHide);
     });
-    filterInput.addEventListener("click", function() {
+    filterInput.addEventListener("click", function(){
         let divToShow, divToHide;
         divToShow = document.getElementById("elect-search");
         divToHide = document.getElementById("elect-filter");
@@ -32,10 +34,7 @@ function addResultButtonListener(){
     const resultButton = document.getElementById("button-result");
     const resultDiv = document.getElementById("elects-row");
     resultButton.addEventListener("click", function(){
-        if (isChoiceFilter())
-            populateElectsRow(resultDiv, getFilterTag());
-        else if (isChoiceSearch())
-            populateElectsRow(resultDiv, null, getSearchName());
+        populateElectsRow(resultDiv, getFilterTag(), getSearchName());
     });
 }
 
@@ -59,8 +58,6 @@ function isChoiceSearch(){
     return !searchElement.classList.contains("d-none");
 }
 
-///
-
 function electHasTag(elect, tag){
     return elect.tags.includes(tag);
 }
@@ -78,7 +75,7 @@ function populateElectsRow(container_row, tag = null, name = null){
     container_row.innerHTML = "";
     electsFromJson.then(data => {
         data.elects.forEach(elect => {
-            if(canAddElect(elect, tag, name)) {
+            if(canAddElect(elect, tag, name)){
                 const personDiv = getElectDiv(elect);
                 container_row.appendChild(personDiv);
             }
@@ -86,7 +83,7 @@ function populateElectsRow(container_row, tag = null, name = null){
     });
 }
 
-function getElects() {
+function getElects(){
     return fetch("https://victor.ait37.fr/api.php?getElects=true")
         .then(response => response.json())
         .catch(error => {
@@ -146,3 +143,5 @@ function getImg(person){
     image.alt = `${person.name}'s Image`;
     return image;
 }
+
+/* -------------------------------------------------- END -------------------------------------------------- */

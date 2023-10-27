@@ -1,7 +1,7 @@
 /* -------------------------------------------------- START -------------------------------------------------- */
 
-/* -------------------- START - Configuration -------------------- */
 
+/* -------------------- START - Configuration -------------------- */
 :root {
   --black-color: #1a1a1a;
   --darkgray-color: #444444;
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--black-color);
 }
 
-/* -------------------- Start - Preloader -------------------- */
+/* ----- Start - Preloader ----- */
 
 #preloader {
   position: fixed;
@@ -97,9 +97,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* -------------------- End - Preloader -------------------- */
+/* ----- End - Preloader ----- */
 
-/* -------------------- Start - BackToTop Button -------------------- */
+/* ----- Start - BackToTop Button ----- */
 
 .back-to-top {
   position: fixed;
@@ -131,9 +131,9 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-/* -------------------- End - BackToTop Button -------------------- */
+/* ----- End - BackToTop Button ----- */
 
-/* -------------------- Start - Header -------------------- */
+/* ----- Start - Header ----- */
 
 #header {
   transition: all 0.5s;
@@ -164,13 +164,12 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
-/* -------------------- End - Header -------------------- */
-
 #header-image {
   width: 100%;
   height: 60vh;
   background-repeat: no-repeat;
   background-attachment: fixed; 
+  background-position-x: center;
   position: relative;
 }
 
@@ -185,7 +184,9 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 10%;
 }
 
-/* -------------------- Start - Navigation Menu -------------------- */
+/* ----- End - Header ----- */
+
+/* ----- Start - Navigation Menu ----- */
 
 /* Desktop Navigation */
 .navbar {
@@ -515,9 +516,9 @@ h1, h2, h3, h4, h5, h6 {
   outline-offset: 5px;
 }
 
-/* -------------------- End - Navigation Menu -------------------- */
+/* ----- End - Navigation Menu ----- */
 
-/* -------------------- Start - Sections -------------------- */
+/* ----- Start - Sections ----- */
 
 section {
   padding: 60px 0;
@@ -569,9 +570,9 @@ section {
   margin-bottom: 0;
 }
 
-/* -------------------- End - Sections -------------------- */
+/* ----- End - Sections ----- */
 
-/* -------------------- Start - Footer -------------------- */
+/* ----- Start - Footer ----- */
 
 #footer {
   font-size: 14px;
@@ -711,6 +712,7 @@ section {
   .w-50 {
     width: 95% !important;
   }
+
   .partners {
     padding: 10px !important;
   }
@@ -728,13 +730,12 @@ section {
   left: calc(50% + 20px) !important;
 }
 
-/* -------------------- End - Footer -------------------- */
-
+/* ----- End - Footer ----- */
 /* -------------------- END - Configuration -------------------- */
 
-/* -------------------- START - index.html -------------------- */
 
-/* -------------------- Start - Hero Section -------------------- */
+/* -------------------- START - index.html -------------------- */
+/* ----- Start - Hero Section ----- */
 
 #hero {
   width: 100%;
@@ -857,17 +858,20 @@ section {
   }
 }
 
-/* -------------------- End - Hero Section -------------------- */
+/* ----- End - Hero Section ----- */
 
-/* -------------------- Start - Agenda Section -------------------- */
+/* ----- Start - Agenda Section ----- */
 
 #agendaCards {
   margin-top: -11%;
 }
 
 #agendaCards .col {
+  position: relative;
+  top: 0;
   transition: .3s;
 }
+
 .scrolled .col:hover {
   cursor: pointer;
   transform: scale(1.02);
@@ -875,21 +879,21 @@ section {
 
 #agendaCards:not(.scrolled) .col:hover {
   cursor: pointer;
-  margin-top: -1% !important;
+  top: -40px;
 }
 
 #agenda-title:after {
   transition: .2s;
 }
 
-/* -------------------- End - Agenda Section -------------------- */
+/* ----- End - Agenda Section ----- */
 
 .news-settings h5, p {
   color: var(--black-color);
   text-shadow: var(--white-color) 0em 0em 0.2em;
 }
 
-/* -------------------- Start - Partners -------------------- */
+/* ----- Start - Partners ----- */
 
 .partners {
   padding: 3rem;
@@ -915,17 +919,16 @@ section {
   }
 }
 
-/* -------------------- End - Partners -------------------- */
-
+/* ----- End - Partners ----- */
 /* -------------------- END - index.html -------------------- */
 
-/* -------------------- START - news.html -------------------- */
 
+/* -------------------- START - news.html -------------------- */
 .header-news {
   background-image: url("../img/news/news.png");
 }
 
-/* -------------------- Start - Covers -------------------- */
+/* ----- Start - Covers ----- */
 
 .portfolio #news-flters {
   list-style: none;
@@ -997,25 +1000,23 @@ section {
   opacity: 1;
 }
 
-/* -------------------- End - Covers -------------------- */
-
+/* ----- End - Covers ----- */
 /* -------------------- END - news.html -------------------- */
 
-/* -------------------- START - calendar.html -------------------- */
 
+/* -------------------- START - calendar.html -------------------- */
 .header-calendar {
   background-image: url("../img/news/calendar.png");
 }
-
 /* -------------------- END - calendar.html -------------------- */
 
-/* -------------------- START - publications.html -------------------- */
 
+/* -------------------- START - publications.html -------------------- */
 .header-publications {
   background-image: url("../img/news/publications.png");
 }
 
-/* -------------------- Start - Pictures -------------------- */
+/* ----- Start - Pictures ----- */
 
 .slide .pictures {
   display: grid;
@@ -1031,12 +1032,11 @@ section {
   
 }
 
-/* -------------------- End - Pictures -------------------- */
-
+/* ----- End - Pictures ----- */
 /* -------------------- END - publications.html -------------------- */
 
-/* -------------------- START - videos.html -------------------- */
 
+/* -------------------- START - videos.html -------------------- */
 .header-videos {
   background-image: url("../img/news/videos.png");
 }
@@ -1059,59 +1059,52 @@ section {
     clear: both;
   }
 }
-
 /* -------------------- END - videos.html -------------------- */
 
-/* -------------------- START - towns.html -------------------- */
 
+/* -------------------- START - towns.html -------------------- */
 .header-towns {
   background-image: url("../img/territory/towns.png");
 }
-
 /* -------------------- END - towns.html -------------------- */
 
-/* -------------------- START - history.html -------------------- */
 
+/* -------------------- START - history.html -------------------- */
 .header-history {
   background-image: url("../img/territory/history.png");
 }
-
 /* -------------------- END - history.html -------------------- */
 
-/* -------------------- START - heritage.html -------------------- */
 
+/* -------------------- START - heritage.html -------------------- */
 .header-heritage {
   background-image: url("../img/territory/heritage.png");
 }
-
 /* -------------------- END - heritage.html -------------------- */
 
-/* -------------------- START - geographic-location.html -------------------- */
 
+/* -------------------- START - geographic-location.html -------------------- */
 .header-geographic-location {
   background-image: url("../img/territory/geographic-location.png");
 }
-
 /* -------------------- END - geographic-location.html -------------------- */
 
-/* -------------------- START - terroir.html -------------------- */
 
+/* -------------------- START - terroir.html -------------------- */
 .header-terroir {
   background-image: url("../img/territory/terroir.png");
 }
-
 /* -------------------- END - terroir.html -------------------- */
 
-/* -------------------- START - administration.html -------------------- */
 
+/* -------------------- START - administration.html -------------------- */
 .header-administration {
   background-image: url("../img/institution/administration.png");
 }
-
 /* -------------------- END - administration.html -------------------- */
 
-/* -------------------- START - elects.html -------------------- */
 
+/* -------------------- START - elects.html -------------------- */
 .header-elects {
   background-image: url("../img/institution/elects.png");
 }
@@ -1128,7 +1121,7 @@ section {
   background: var(--yellow-color);
 }
 
-/* -------------------- Start - Elect's List -------------------- */
+/* ----- Start - Elect's List ----- */
 
 .team .member {
   overflow: hidden;
@@ -1145,6 +1138,8 @@ section {
 
 .team .member .member-info {
   padding: 25px 15px;
+  height: 100%;
+  cursor: pointer;
 }
 
 .team .member .member-info h4 {
@@ -1182,15 +1177,16 @@ section {
   color: var(--white-color) !important;
 }
 
-/* -------------------- End - Elect's List -------------------- */
-
+/* ----- End - Elect's List ----- */
 /* -------------------- END - elects.html -------------------- */
 
-/* -------------------- START - useful-numbers.html -------------------- */
 
+/* -------------------- START - useful-numbers.html -------------------- */
 .header-useful-numbers {
   background-image: url("../img/institution/useful-numbers.png");
 }
+
+/* ----- Start - Form ----- */
 
 .numbers-form {
   margin-bottom: 15px;
@@ -1277,29 +1273,30 @@ section {
   }
 }
 
+/* ----- End - Form ----- */
 /* -------------------- END - useful-numbers.html -------------------- */
 
-/* -------------------- START - culture.html -------------------- */
 
+/* -------------------- START - culture.html -------------------- */
 .header-culture {
   background-image: url("../img/daily/culture.png");
 }
-
 /* -------------------- END - culture.html -------------------- */
 
-/* -------------------- START - sport.html -------------------- */
 
+/* -------------------- START - sport.html -------------------- */
 .header-sport {
   background-image: url("../img/daily/sport.png");
 }
-
 /* -------------------- END - sport.html -------------------- */
 
-/* -------------------- START - contact.html -------------------- */
 
+/* -------------------- START - contact.html -------------------- */
 .header-contact {
   background-image: url("../img/contact/contact.png");
 }
+
+/* ----- Start - Info ----- */
 
 .contact .info {
   border-top: 3px solid var(--black-color);
@@ -1488,10 +1485,11 @@ section {
   }
 }
 
+/* ----- End - Info ----- */
 /* -------------------- END - contact.html -------------------- */
 
-/* -------------------- START - site-map.html -------------------- */
 
+/* -------------------- START - site-map.html -------------------- */
 .header-site-map {
   background-image: url("../img/sitemap/site-map.png");
 }
@@ -1509,7 +1507,7 @@ section {
 .plan ul:last-child {
   margin-bottom: 0;
 }
-
 /* -------------------- END - site-map.html -------------------- */
+
 
 /* -------------------------------------------------- END -------------------------------------------------- */
